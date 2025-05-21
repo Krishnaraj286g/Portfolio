@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio" href="#portfolio2">Portfolio</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i  id="menu" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Mernstack Developer</p>
+                <h1>Hi, I'm <span>Krishnaraj</span> <br>From India</h1>
+            </div>
+
+            <div class="header-sec">
+                    <div class="header-content">
+                         <p>Mernstack Developer</p>
+                         <h1>Hi, I'm <span>Krishnaraj</span> <br>From India</h1>
+                    </div>
+                    <div class="header-img">
+                        <img src="images/bg3.png" alt="">
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -----------about-------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row"> 
+                <div class="about-col-1">
+                    <div class="img-wrapper">
+                    <img src="images/profile2.png" >
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <div class="about-title">
+                    <h1 class="sub-title">About Me</h1>
+                    <h3>-Who I Am ?-</h3>
+                    </div>
+                    <h3>I'm Krishnaraj and I'm</h3>
+                    <p class="about-content">an ambitious aspiring Full Stack (MERN) Web Developer, I am keen to leverage my skills and further my expertise. Driven by a passion for innovation, I am eager to contribute and grow within a progressive organization.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Frontend</span><br>HTML, CSS, JavaScript, Bootstrap, React.js</li>  
+                        <li><span>Backend</span><br>Node.js, Express.js</li>  
+                        <li><span>Database</span><br>MongoDB</li>  
+                        <li><span>Tools</span><br>Git,GitHub,Postman</li>  
+                    </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2022</span><br>Bachelor of Computer Applications ( BCA )</li>  
+                        <li><span>2024 - 2025 ( Mernstack )</span><br>Completed a MERN Stack course at IDM Techpark, Erode, gaining skills to build responsive, full-stack web applications. Eager to apply these skills in real-world projects and grow as a developer.</li>  
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------Works------------------->
+
+    <div class="Workprojects" id="work">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="row">
+
+                <div class="left">
+                    <div class="slides">
+                    <div class="slide">
+                    <h3>Portfolio (HTML, CSS, JavaScript, Bootstraps)</h3>
+                    <h3>To-Do list(HTML, CSS, JavaScript)</h3>
+                    <h3>Music Player (HTML, CSS, JavaScript)</h3>
+                    <h3>Age Calculater (HTML, CSS, JavaScript)</h3>
+                    <h3>Form Validation(HTML, CSS, JavaScript)</h3>
+                    </div>
+
+                    <div class="slide">
+                    <h3>Online shopping website (HTML, CSS, JavaScript, Bootstrap)</h3>
+                    <h3>Feedback Enhancer (REACT,Google Sheet)</h3>
+                    <h3>Weather App (HTML, CSS, JavaScript)</h3>
+                    <h3>Income and Expense tracker (React,Node,Express,MongoDB)</h3>
+                    <h3>Calculator (HTML, CSS, JavaScript)</h3>
+
+                    </div>
+                    </div>
+
+                    <div class="slide-btn">
+                        <button class="preview" onclick="prevSlide()">❮</button>
+                        <button class="nextview" onclick="nextSlide()">❯</button>
+                    </div>
+                </div>
+
+
+                <!--  -->
+                <div class="right">
+                    <div id="developer">
+                        <img src="images/developer.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-------------Projects------------------>
+
+    <!-- protfolio 1 -->
+
+    <div class="portfolio1" id="portfolio">
+        <h1 class="sub-title">My Project</h1>  
+
+
+        <div class="port-container">
+
+            <div class="work-list">
+               <div class="work-container" > 
+                <div class="work">
+                    <img src="images/stylish.jpg" alt="">
+                    <div class="layer">
+                        <h3>Stylish Online Store</h3>
+                        <p>A responsive and visually appealing front-end for an online store, optimized for all screen sizes.</p>
+                        <a href="https://onlinestore-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               </div>
+               
+                <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/formvalid.jpg" alt="">
+                    <div class="layer">
+                        <h3>Form Validation</h3>
+                        <p>Ensures users enter a valid username, email, and password by checking each field’s format before submission.</p>
+                        <a href="https://form-validation-k.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+            
+             <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/feedback.jpg" alt="">
+                    <div class="layer">
+                        <h3>Feedback Enhancer</h3>
+                        <p>"Feedback Enhancer" lets you share your thoughts about my project — your feedback is automatically saved to my Google Sheet for review.</p>
+                        <a href="https://feedback-comments.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+            
+                <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/weather-app.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Displays real-time weather information for any searched city.</p>
+                        <a href="https://weather-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+            
+            <div class="work-container"  > 
+                <div class="work">
+                    <img src="images/play-tune.jpg" alt="">
+                    <div class="layer">
+                        <h3>Play Tune(Music player)</h3>
+                        <p>A basic music player that lets users play, pause, and skip audio tracks.</p>
+                        <a href="https://play-tune.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/Age-cal.jpg" alt="">
+                    <div class="layer">
+                        <h3>Age Calculator</h3>
+                        <p>Calculates and shows your current age accurately.</p>
+                        <a href="https://k-agecal.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-container" >
+                <div class="work" >
+                    <img src="images/To-do.jpg" alt="">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>A lightweight task tracker for planning and monitoring daily goals.</p>
+                        <a href="https://todo-lista-p-p.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functional calculator capable of handling standard arithmetic operations like addition, subtraction, multiplication, and division.</p>
+                        <a href="https://calculator-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-container" > 
+                <div class="work" >
+                    <img src="images/Incom-expense.jpg" alt="">
+                    <div class="layer">
+                        <h3>Income and Expense Tracker</h3>
+                        <p>Simplifies personal finance by keeping track of your earnings and expenses.</p>
+                        <a href="https://incomeexpensetrack.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            
+                
+            </div>   
+
+        </div>
+        <div class="buttons">
+                <span class="prev"></span>
+                <span class="next"></span>
+            </div> 
+     </div>
+
+     <!-- portfolio 2 -->
+
+     <div class="portfolio" id="portfolio2">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>  
+            <div class="work-list">
+                <div class="work project-item">
+                    <img src="images/Incom-expense.jpg" alt="">
+                    <div class="layer">
+                        <h3>Income and Expense Tracker</h3>
+                        <p>Simplifies personal finance by keeping track of your earnings and expenses.</p>
+                        <a href="https://incomeexpensetrack.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work project-item">
+                    <img src="images/Age-cal.jpg" alt="">
+                    <div class="layer">
+                        <h3>Age Calculator</h3>
+                        <p>Calculates and shows your current age accurately.</p>
+                        <a href="https://k-agecal.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work project-item">
+                    <img src="images/play-tune.jpg" alt="">
+                    <div class="layer">
+                        <h3>Play Tune(Music player)</h3>
+                        <p>A basic music player that lets users play, pause, and skip audio tracks.</p>
+                        <a href="https://play-tune.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work project-item" style="display: none;">
+                    <img src="images/To-do.jpg" alt="">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>A lightweight task tracker for planning and monitoring daily goals.</p>
+                        <a href="https://todo-lista-p-p.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work project-item" style="display: none;">
+                    <img src="images/stylish.jpg"  alt="">
+                    <div class="layer">
+                        <h3>Stylish Online Store</h3>
+                        <p>A responsive and visually appealing front-end for an online store, optimized for all screen sizes.</p>
+                        <a href="https://onlinestore-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work project-item" style="display: none;">
+                    <img src="images/formvalid.jpg" alt="">
+                    <div class="layer">
+                        <h3>Form Validation</h3>
+                        <p>Ensures users enter a valid username, email, and password by checking each field’s format before submission.</p>
+                        <a href="https://form-validation-k.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+                <div class="work project-item" style="display: none;">
+                    <img src="images/feedback.jpg" alt="">
+                    <div class="layer">
+                        <h3>Feedback Enhancer</h3>
+                        <p>"Feedback Enhancer" lets you share your thoughts about my project — your feedback is automatically saved to my Google Sheet for review.</p>
+                        <a href="https://feedback-comments.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work project-item" style="display: none;">
+                    <img src="images/weather-app.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Displays real-time weather information for any searched city.</p>
+                        <a href="https://weather-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work project-item" style="display: none;">
+                    <img src="images/calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A functional calculator capable of handling standard arithmetic operations like addition, subtraction, multiplication, and division.</p>
+                        <a href="https://calculator-krish.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+            </div>   
+             <div class="seemore"><button id="seemorebtn">See more</button></div>
+       
+        </div>
+    </div>
+
+
+
+
+    <!-------------Contact -------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> krishnaraj286@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 9944964624</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" required name="Name">
+                        <input type="email" placeholder="Your Email" required name="Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>Krishnaraj |  2025 All Rights Reserved. Privacy Policy </p>
+    </div>
+
+
+
+    <script>
+
+        // about sec
+
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+        // sidemenu
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+        // Contact
+
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbylPHObaMH3E2E_G1Trt_p7sqyPNqjBggGPxc_j9OKVi5LAlzOGDGg31K04eAI72YmVog/exec'
+          const form = document.forms['submit-to-google-sheet'];
+          const msg = document.getElementById("msg");
+
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { 
+                msg.innerHTML = "Message send Successfully !";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+//   Project slider
+
+            let prev = document.querySelector('.prev');
+        let next = document.querySelector('.next');
+
+        next.addEventListener("click", function(){
+            let items = document.querySelectorAll(".work-container");
+            document.querySelector(".work-list").appendChild(items[0]);
+        })
+        prev.addEventListener("click", function(){
+            let items = document.querySelectorAll(".work-container");
+            document.querySelector(".work-list").prepend(items[items.length - 1]);
+        })
+
+//slide
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  const totalSlides = document.querySelectorAll('.slide').length;
+  
+  if (index >= totalSlides) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = totalSlides - 1;
+  } else {
+    currentIndex = index;
+  }
+  
+  const offset = -currentIndex * 100;
+  slides.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Optional: auto-slide every 5 seconds
+// setInterval(nextSlide, 5000);
+
+// projects
+let seemorebtn = document.getElementById("seemorebtn");
+let work = document.querySelectorAll(".project-item");
+
+seemorebtn.addEventListener("click",() => {
+    work.forEach((item,index) => {
+        if(index >= 3){
+            item.style.display = "block";
+
+        }
+    });
+    seemorebtn.style.display = "none";
+})
+
+
+
+    </script>
+
+
+</body>
+</html> 
