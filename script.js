@@ -114,7 +114,7 @@ let work = document.querySelectorAll(".project-item");
 
 seemorebtn.addEventListener("click",() => {
     work.forEach((item,index) => {
-        if(index >= 3){
+        if(index >= 2){
             item.style.display = "block";
 
         }
