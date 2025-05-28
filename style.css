@@ -12,11 +12,23 @@ html{
 body{
     background: #999191;
     background: linear-gradient(52deg, rgba(153, 145, 145, 1) 0%, rgba(50, 51, 61, 1) 100%, rgba(199, 207, 217, 0.55) 55%);
-
-
     color: #fff;
-
 }
+
+/*  */
+.reveal {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*  */
 
 #header {
     position: relative;
